@@ -7,7 +7,7 @@ Make sure you have **Python 3.8** or greater installed.
 
 ## Installing RobotCode
 1. Open Visual Studio Code.
-2. Go to the **Extensions** tab (or press `CTRL + SHIFT + X`).
+2. Go to the **Extensions** tab (Shortcut key `CTRL + SHIFT + X`).
 3. Search for **RobotCode** and install the extension ![RobotCode Icon](../robotcode-logo.svg "RobotCode Icon"){.inline-icon} [RobotCode - Robot Framework Support](https://marketplace.visualstudio.com/items?itemName=d-biehl.robotcode "RobotCode Extension"). This will also install the **Python** and **Python Debugger** extensions.
 4. **(Optional)** Install the **Even Better TOML** extension for handling `.toml` files more effectively. We'll use a `robot.toml` file in the [Configuration](./configuration) section to set up our project settings.  
 
@@ -26,10 +26,13 @@ robotframework-tidy
 :::
 
 2. **Set up your Python environment:**
-- Click on **Create Environment** in Visual Studio Code. If this button isn't visible, you can alternatively open the Command Palette by pressing `CTRL + SHIFT + P`, then search for **Python: Create Environment**, and select it.
-- Choose **Venv**, which stands for Virtual Environment.
-- Select your Python version.
-- Check the box for requirements.txt and click OK.
+
+In this step we will let Visual Studio Code create a virtual environment using the selected Python version, install the dependencies listed in requirements.txt, and activate the virtual environment. This ensures that your project has all the necessary packages and an isolated environment for development.
+
+1. Click on **Create Environment** in Visual Studio Code. If this button isn't visible, you can alternatively open the Command Palette by pressing `CTRL + SHIFT + P`, then search for **Python: Create Environment**, and select it.
+2. Choose **Venv**, which stands for Virtual Environment.
+3. Select your Python version.
+4. Check the box for requirements.txt and click OK.
 
 ## Verifying the Installation
 1. Open the terminal in Visual Studio Code. Make sure you are located in the root folder of your project.
